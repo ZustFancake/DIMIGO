@@ -3,12 +3,12 @@
 #include <string.h>
 #include <math.h>
 
-int is_prime(int n) { // 소수 찾기 함수 
-    if (n < 2) { // 2 이하이면 소수가 아니므로 0 반환 
+int is_prime(int n) { 
+    if (n < 2) {
         return 0;
     }
-    for (int i = 2; i <= sqrt(n); i++) { // 가장 효율적인 알고리즘 사용 
-        if (n % i == 0) { // 만약 자기 자신 이외의 약수가 존재한다면 0을 반환. 
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) { 
             return 0;
         }
     }

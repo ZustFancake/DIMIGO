@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-    char string[100] = "" // 평문;
+    char string[100] = "" // Plain text
     
     for (int i = 1; i <= 5; i++){
 	    for (int j = 0; j < 99; j++){

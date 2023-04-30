@@ -10,6 +10,6 @@ int main(){
 		}
 	}
 
-    printf("%s\n", string); // |HG}G}DKBI|Hww}|~GBIN{|gLAB|EBAyyHO|g}HA{DLJGDD|HG}}|~GBIyG|H}Agy~A|K}ACKKBIDG}H}KB|KBMKzK~wIAALFAN
+    printf("%s\n", string); // |HG}G}DABIDABI}|~GBIN{|gLAB|EBAyyHO|g}HA{DLJGDD|HG}}|~GBIyG|H}Agy~A|K}ACKKBIDG}H}KB|KBMKzK~wIAALFAN
     return 0;
 }

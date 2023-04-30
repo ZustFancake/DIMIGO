@@ -10,6 +10,6 @@ int main() {
         }
     }
 
-    printf("%s\n", string); // thisislonglongstringbutIdontknowwhatIshouldfillthisstringwithsoIwrotesomeenglishsentenceverygoodjob
+    printf("%s\n", string); // thisisverylongstringbutIdontknowwhatIshouldfillthisstringwithsoIwrotesomeenglishsentenceverygoodjob
     return 0;
 }

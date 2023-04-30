@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    char string[100] = "|HG}G}DKBI|Hww}|~GBIN{|gLAB|EBAyyHO|g}HA{DLJGDD|HG}}|~GBIyG|H}Agy~A|K}ACKKBIDG}H}KB|KBMKzK~wIAALFAN";
+    char string[100] = "|HG}G}DABIDABI}|~GBIN{|gLAB|EBAyyHO|g}HA{DLJGDD|HG}}|~GBIyG|H}Agy~A|K}ACKKBIDG}H}KB|KBMKzK~wIAALFAN";
 
     for (int i = 5; i >= 1; i--) {
         for (int j = 0; j < 99; j++) {
@@ -10,6 +10,6 @@ int main() {
         }
     }
 
-    printf("%s\n", string); // thisislengthyystringbutIdontknowwhatIshouldfillthisstringwithsoIwrotesomeenglishsentenceverygoodjob
+    printf("%s\n", string); // thisislonglongstringbutIdontknowwhatIshouldfillthisstringwithsoIwrotesomeenglishsentenceverygoodjob
     return 0;
 }

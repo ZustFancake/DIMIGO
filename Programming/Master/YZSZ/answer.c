@@ -27,7 +27,7 @@ int main(){
 		if (row != 0){ // 출력 결과가 -1이 아닌 경우 
 			
 			cnt = 0; int stt = 1;
-			int sc = 0, st = 0;
+			int sc = 0, st = 0, rc = 0; 
 			
 			while(1){
 				char k; scanf("%c", &k);
@@ -38,7 +38,10 @@ int main(){
 					else           st++;
 				}
 				else {
-					if (cnt != L){
+					if (!((k == '-' || k == '&' || k == '\n'))){
+						stt = 0;
+					}
+					else if (cnt != L){
 						if (sc == straight && st == tangled){
 							stt = 1;
 						}
@@ -49,12 +52,15 @@ int main(){
 					}
 					cnt = 0; sc = 0; st = 0;
 				}
+				if (k == '\n') rc++;
 			}
-			if (stt == 1) score++;
+			if (stt == 1 && row == rc - (rem == 0 ? 0 : 1)) score++;
 		}
-		else{ // 출력 결과가 -1이여야 하는 경우 
+		else { // 출력 결과가 -1이여야 하는 경우 
 			int n; scanf("%d", &n);
-			if (n == -1) score++;
+			if (n == -1){
+				score++; scanf("%*c");	
+			}
 			else {
 				while(1){
 					char k; scanf("%c", &k);
@@ -65,7 +71,7 @@ int main(){
 	}
 	
 	if      (score == T)             printf("정답입니다.");
-	else if (0 < score && score < T) printf("오답입니다. (통과하지 못한 테스트케이스가 있습니다.)");
+	else if (0 < score && score < T) printf("오답입니다. (통과하지 못한 테스트케이스가 있습니다.) - %d", score);
 	else                             printf("오답입니다.");
 	
 }

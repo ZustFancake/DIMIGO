@@ -71,6 +71,7 @@ int main() {
 
     int p, q;
     scanf("%d %d", &p, &q);
+    int B[q][p];
 
     for (int i = 0; i < q; i++) {
         for (int j = 0; j < p; j++) {
